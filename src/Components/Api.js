@@ -25,7 +25,7 @@ function Api(){
     return (
         
        <div>
-           <h1>get api call</h1>
+           <h1>Get api call</h1>
             {
              dt.map(element=>
                 (
@@ -34,13 +34,14 @@ function Api(){
              
             
          
-             <Card className='Card' style={{ width: '200px',height:'200px' }}>
+             <Card className='Card'>
              <div className='upper-video'>
-             <video  width="200px" height="200px" controls autoplay>
+             <h3 align="center">{element.heading}</h3>
+             <video  width="300px" height="200px" controls autoplay>
                  <source src={element.video} type="video/mp4"/>
                  Your browser does not support the video tag
              </video>
-             <h3>{element.heading}</h3>
+             
              </div>
              <ul>
              <li>{element.tags[0]}</li>

@@ -60,12 +60,17 @@ input::placeholder{
 }
 
 .upper-video{
-    display: flex;
-    align-items: flex-end;
+    
+    position: relative;
 }
 
 
-.card{
-    display: flex;  
-      
+.Card{
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.Card:hover{
+    box-shadow: 0 0 10px 2px rgba(0,0,0,0.1);
+    transition: .2s;
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 import './style.css'
-import Cards from './Cards'
-import Api from './Api'
+
+
 
 const Header = () => {
   return (
@@ -16,10 +16,7 @@ const Header = () => {
        <button className="btn text-light col-lg-1" style={{marginLeft:"5px"}}><span className='hover'>Submit</span></button>    
        
        </form>
-       <div className='card1'>
-         <Cards/>  
-
-       </div>
+       
        
        
 </>
