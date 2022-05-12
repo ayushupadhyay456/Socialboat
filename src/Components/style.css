@@ -49,10 +49,7 @@
 .container{
     padding:2px 16px;
 }
-.card1{
-    margin-top: 40px;
-    margin-left: 5px;
-}
+
 
 input,
 input::placeholder{
@@ -65,12 +62,23 @@ input::placeholder{
 }
 
 
-.Card{
+.Card-grp{
     border-radius: 10px;
     cursor: pointer;
+    background-color: rgb(52, 77, 130);
+    margin-left:5px;
+    display: flex;
+    max-width:1200px;
+    flex-wrap: wrap;
 }
 
-.Card:hover{
+.Card-grp:hover{
     box-shadow: 0 0 10px 2px rgba(0,0,0,0.1);
     transition: .2s;
+}
+.ul{
+    background-color: #FFFFFF;
+}
+.h3{
+    margin-top: 5px;
 }

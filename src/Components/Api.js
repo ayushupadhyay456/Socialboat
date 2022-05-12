@@ -1,6 +1,6 @@
 import React from 'react'
 import {useState, useEffect} from 'react'
-
+import { Row } from 'react-bootstrap'
 import Card from 'react-bootstrap/Card'
 import axios from 'axios'
 import './style.css'
@@ -29,15 +29,16 @@ function Api(){
             {
              dt.map(element=>
                 (
-             <div>
+             <div className='cd'>
              
              
             
-         
-             <Card className='Card'>
+             
+            
+             <Card className='Card-grp mb-4' style={{ width: '18rem',border:"none",}}>
              <div className='upper-video'>
-             <h3 align="center">{element.heading}</h3>
-             <video  width="300px" height="200px" controls autoplay>
+             <h2 align="center">{element.heading}</h2>
+             <video  width="287px" height="200px" controls autoplay>
                  <source src={element.video} type="video/mp4"/>
                  Your browser does not support the video tag
              </video>
