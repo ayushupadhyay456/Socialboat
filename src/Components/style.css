@@ -17,25 +17,13 @@
     position: relative;
     transition: 0.5s;
   }
-.btn span:after{
-    content:'\00bb';
-    position:absolute;
-    opacity:0;
-    top:0;
-    right:-20px;
-    transition:0.5s;
-}
-.btn:hover span{
-    padding-right:25px;
 
-}
-.btn:hover span{
-    opacity:1;
-    right:0;
-}
+
 .form{
     display: flex;
+    align-items: center;
     justify-content: center;
+    margin-bottom: 10px;
 }
 .card{
     box-shadow:0 4px 8px 0 rgba(0,0,0,0.2);
@@ -46,9 +34,7 @@
 .card:hover{
     box-shadow:0 8px 16px rgba(0,0,0,0.2)
 }
-.container{
-    padding:2px 16px;
-}
+
 
 
 input,
@@ -67,9 +53,9 @@ input::placeholder{
     cursor: pointer;
     background-color: rgb(52, 77, 130);
     margin-left:5px;
-    display: flex;
-    max-width:1200px;
-    flex-wrap: wrap;
+    width: 100%;
+    /* display:grid; */
+    /* flex-direction: column; */
 }
 
 .Card-grp:hover{
@@ -81,4 +67,33 @@ input::placeholder{
 }
 .h3{
     margin-top: 5px;
+}
+
+.cd {
+    display: inline-grid;
+    margin: 10px;
+}
+.main {
+    justify-content: space-between;
+   
+}
+.image
+{
+    border-radius: 20px;
+   
+    margin-top: 3px;
+
+}
+.image:hover{
+    box-shadow: 2px 2px 2px 2px;
+    transition: 0.4s;
+}
+.font-awesome
+{
+    display: flex;
+    justify-content: flex-end;
+}
+.container
+{
+    
 }
