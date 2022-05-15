@@ -1,4 +1,5 @@
 import './App.css';
+import Api from './Components/Api';
 import Header from './Components/Header';
 
 

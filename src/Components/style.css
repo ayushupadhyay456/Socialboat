@@ -44,7 +44,7 @@ input::placeholder{
 
 .upper-video{
     
-    position: relative;
+    justify-content: space-between;
 }
 
 
@@ -74,7 +74,13 @@ input::placeholder{
     margin: 10px;
 }
 .main {
-    justify-content: space-between;
+    display: flex;
+width: 100%;
+flex-wrap:wrap;
+padding: 10%;
+    
+    
+    
    
 }
 .image
@@ -85,15 +91,43 @@ input::placeholder{
 
 }
 .image:hover{
-    box-shadow: 2px 2px 2px 2px;
+    box-shadow: 0 35px 100px rgba(0,0,0,0,300);
     transition: 0.4s;
 }
-.font-awesome
-{
-    display: flex;
-    justify-content: flex-end;
+
+.container image{
+display: flex;
+justify-content: flex-start;
+cursor: pointer;
 }
 .container
 {
-    
+display: flex;
+justify-content: space-between;
+padding:20px 50px;
+font-size: 50px;
+
 }
+.font-awesome
+{
+    padding-top: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .main {
+      display: grid;
+
+    }
+    .font-awesome{
+        margin: 0 0 0 120px;
+    }
+    .search-bar
+    {
+        margin-left: 120px;
+
+    }
+    .body{
+        margin-right:100px
+    }
+  }
+

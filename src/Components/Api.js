@@ -13,7 +13,7 @@ function Api() {
 
     useEffect(() => {
         async function fetchData() {
-            const req = await axios.get("https://asia-south1-socialboat-dev.cloudfunctions.net/assignmentVideos?q=a&numResults=50");
+            const req = await axios.get("https://asia-south1-socialboat-dev.cloudfunctions.net/assignmentVideos?q=a&numResults=10");
             setData(req.data.results);
 
         }
@@ -26,13 +26,14 @@ function Api() {
     return (
 
 
-        <div className = "main">
-            
+        <div className="main">
+
             {
 
-                dt.map(element =>
+                dt.map(element=>
+                 
                 (
-                    <div className='cd'>
+                    <div key={element.heading}  className='cd'>
                         <Card className='Card-grp mb-4' style={{ width: '18rem', border: "none", }}>
                             <div className='upper-video'>
                                 <h2 align="center">{element.heading}</h2>
@@ -42,15 +43,16 @@ function Api() {
                                 </video>
 
                             </div>
-                            <ul>
-                                <li>{element.tags[0]}</li>
-                                <li>{element.tags[1]}</li>
-                                <li>{element.tags[2]}</li>
-                            </ul>
+                            
+                                <h4 style={{padding:"0 0 0 10px"}}>{element.tags[0]}</h4>
+                                <h4 style={{padding:"0 0 0 10px"}}>{element.tags[1]}</h4>
+                                <h4 style={{padding:"0 0 0 10px"}}>{element.tags[2]}</h4>
+                                
+                            
 
                         </Card>
                     </div>
-                ))}
+  ))}
         </div>
 
 
